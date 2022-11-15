@@ -104,12 +104,12 @@ a {
 }
 .alert-container {
   height: 3rem;
+  margin: 0.5rem auto;
 }
 .alert-box {
   padding: 0.5rem;
   border-radius: 5px;
   border: 2px solid var(--primary-danger);
-  margin: 1rem auto;
 }
 
 .danger {

@@ -1,7 +1,7 @@
 <template>
   <div class="section-center section">
     <h2 className="title">Todo Nuxt Vuex</h2>
-    <Alert v-if="showAlert" />
+    <Alert />
     <section class="main-container">
       <h2>Task List</h2>
       <Form ref="form" />
@@ -32,7 +32,7 @@ export default {
   computed: {
     ...mapState({
       todoList: "todoList",
-      showAlert: "showAlert",
+      // showAlert: "showAlert",
     }),
   },
 };

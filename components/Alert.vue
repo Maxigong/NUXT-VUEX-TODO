@@ -1,6 +1,6 @@
 <template>
   <div class="alert-container">
-    <div :class="alert.type" class="alert-box">
+    <div v-if="showAlert" :class="alert.type" class="alert-box">
       <p>{{ alert.message }}</p>
     </div>
   </div>
@@ -12,6 +12,7 @@ export default {
   computed: {
     ...mapState({
       alert: "alert",
+      showAlert: "showAlert",
     }),
   },
 };
